@@ -1,0 +1,19 @@
+.container{
+    max-width: 520px;
+    margin: auto;
+    margin-top: 100px;
+    font-family: sans-serif;
+}
+h1{
+    margin-bottom: 30px;
+}
+
+input {
+    width: calc(100% - 20px);
+    display: block;
+    padding: 6px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
