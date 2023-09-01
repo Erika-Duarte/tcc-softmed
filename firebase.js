@@ -65,3 +65,6 @@ const firebaseConfig = {
      var listRef = database.ref ('funcionarios/' + uniqueId)
      listRef.update(obj)
  }
+ function voltar(){
+    window.location.href = "novocadastro.html"
+ }
