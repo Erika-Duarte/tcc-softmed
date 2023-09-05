@@ -11,24 +11,26 @@ const firebaseConfig = {
   
  function sendData(){
      var nome = document.querySelectorAll('input')[0]
-     var cpf = document.querySelectorAll('input')[1]
-     var telefone = document.querySelectorAll ('input')[2]
-     var email = document.querySelectorAll('input')[3]
-     var senha = document.querySelectorAll('input')[4]
+     var nomesocial = document.querySelectorAll('input')[1]
+     var cnpj = document.querySelectorAll('input')[2]
+     var email = document.querySelectorAll ('input')[3]
+     var contato = document.querySelectorAll('input')[4]
+
      
 
-     var listRef = database.ref('funcionarios/')
+     var listRef = database.ref('clinicas/')
      var newRef = listRef.push()
      newRef.set({
          'nome': nome.value,
-         'cpf': cpf.value,
-         'telefone':telefone.value, 
-         'email': email.value,
-         'senha': senha.value
+         'nomesocial': nomesocial.value,
+         'cnpj': cnpj.value,
+         'email':email.value, 
+         'contato': contato.value,
+
          
      })
  };
 
- function cadastros(){
-    window.location.href = "cadastros.html"
+ function cadastrosclinicas(){
+    window.location.href = "cadastrosclinicas.html"
  }

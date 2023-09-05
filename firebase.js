@@ -68,3 +68,5 @@ const firebaseConfig = {
  function voltar(){
     window.location.href = "novocadastro.html"
  }
+
+ 

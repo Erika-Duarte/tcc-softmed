@@ -1,0 +1,114 @@
+.container{
+    max-width: 520px;
+    margin: auto;
+    margin-top: 100px;
+    font-family: sans-serif;
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+input {
+    width: calc(100% - 20px);
+    display: block;
+    padding: 6px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}    
+
+.wrapper-cad{
+    position: fixed;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    a{
+        display: block;
+        width: 200px;
+        height: 30px;
+        line-height: 40px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #858484;
+        border: 2px solid #858484;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+    }
+    
+    a span{
+        position: relative;
+        z-index: 2;
+    }
+    
+    a:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #45fc54;
+        transition: all .35s;
+    }
+    
+    a:hover{
+        color: #000000;
+    }
+    
+    a:hover:after{
+        width: 100%;
+    }    
+    
+    .wrapper-fun{
+        position: fixed;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    a{
+        display: block;
+        width: 200px;
+        height: 70px;
+        line-height: 40px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #858484;
+        border: 2px solid #858484;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+    }
+    
+    a span{
+        position: relative;
+        z-index: 2;
+    }
+    
+    a:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #5fff5a;
+        transition: all .35s;
+    }
+    
+    a:hover{
+        color: #000000;
+    }
+    
+    a:hover:after{
+        width: 100%;
+    }

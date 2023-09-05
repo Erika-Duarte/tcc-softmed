@@ -21,78 +21,11 @@
             <label> Contato </label>
             <input type="number">
             <button>Cadastrar</button>
-            <button type="button" onclick="cadastros()">Clínicas Cadastradas</button>
+            <button type="button" onclick="cadastrosclinicas()">Clínicas Cadastradas</button>
 
         </div>
 
-    </div>
-<script>
-
- firebase.initializeApp (firebaseConfig)
-
- const database = firebase.database()
-
- const dataContainer = document.querySelector('tbody')
-
- var fetchedData = database.ref('clinicas/')
- fetchedData.on('value', (snapshot) => {
-     var data = snapshot.val()
-     var htmlData = ''
-     for (var key in data){
-         var value = data[key]
-         htmlData += `
-         <tr>
-                 <td>${value.razaosocial}</td>
-                 <td>${value.nomefantasia}</td>
-                 <td>${value.cnpj}</td>
-                 <td>${value.email}</td>
-                 <td>${value.contato}</td>
-                 <td>
-                     <button onclick="readyForUpdate('${key}', this)">Atualizar</button>
-                     <button onclick="removeMess('${key}', this)">Deletar</button>
-                 </td>
-             </tr>
-
-         `;
-     }
-     dataContainer.innerHTML = htmlData
- })
-
- function removeMess(uniqueId){
-     database.ref('funcionarios/' + uniqueId).remove()
- }
-
- function readyForUpdate(uniqueId, elem){
-
-     var siblingTd = elem.parentElement.parentElement.getElementsByTagName('td')
-
-     for( var i=0; i < siblingTd.length-1; i++){
-         siblingTd[i].contentEditable = true
-         siblingTd[i].classList.add('temp-update-class')
-     }
-
-     elem.setAttribute('onclick', `updateNow('${uniqueId}')`)
-     elem.innerHTML = 'Enviar'
- }
-
-
- function updateNow(uniqueId){
-     var contentId = document.querySelectorAll('.temp-update-class')
-     var obj = {
-         'razaosocial': contentId[0].textContent,
-         'nomefantasia': contentId[1].textContent,
-         'cnpj': contentId[2].textContent,
-         'email':contentId[3].textContent,
-         'contato': contentId[4].textContent,
-     }
-
-     var listRef = database.ref ('clinicas/' + uniqueId)
-     listRef.update(obj)
- }
- function voltar(){
-    window.location.href = "novocadastro.html"
- }
-</script>
+    </div>  
 <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-database-compat.js"></script>
 
@@ -100,7 +33,7 @@
 
 
 </body>
-<link rel="stylesheet" href="novocadastro.css">
+<link rel="stylesheet" href="cadclinicas.css">
 
 </html>
 
