@@ -29,8 +29,8 @@ const firebaseConfig = {
 
          
      })
- };
+};
 
- function cadastrosclinicas(){
+function cadastrosclinicas(){
     window.location.href = "clinicascadastradas.html"
  }
