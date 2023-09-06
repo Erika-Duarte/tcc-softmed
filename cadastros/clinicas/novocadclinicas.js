@@ -32,5 +32,5 @@ const firebaseConfig = {
  };
 
  function cadastrosclinicas(){
-    window.location.href = "cadastrosclinicas.html"
+    window.location.href = "clinicascadastradas.html"
  }
