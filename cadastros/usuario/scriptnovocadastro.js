@@ -32,3 +32,6 @@ const firebaseConfig = {
  function cadastros(){
     window.location.href = "cadastros.html"
  }
+ function logininterno(){
+    window.location.href = "logininterno.html"
+ } 
