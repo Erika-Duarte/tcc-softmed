@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SoftMed - Gerar Encaminhamento </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../index.css" rel="stylesheet" />
+
+</head>
+<body class="d-flex flex-column h-100">
+
+    <main class="flex-shrink-0">
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand">Guia de Encaminhamento</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Sair</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../agenda/agenda.html">Ir para Agenda</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </main>
+
+             <form class="row g-3">
+                    <div class="col-md-4">
+                      <label for="inputRazao" class="form-label">Razão Social</label>
+                      <input type="text" class="form-control" id="Razao">
+                    </div>
+                
+                    <div class="col-md-4">
+                      <label for="inputNomeF" class="form-label">Nome Fantasia</label>
+                      <input type="text" class="form-control" id="inputNomeF">
+                    </div>
+
+                    <div class="col-4">
+                      <label for="inputCNPJ" class="form-label">CNPJ</label>
+                      <input type="number" class="form-control" id="inputCNPJ">
+                    </div>
+                    
+                    <div class="col-md-4">
+                      <label for="inputEmail4" class="form-label">E-mail</label>
+                      <input type="text" class="form-control" id="inputEmail4">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="inputTelR" class="form-label">Telefone do Responsável</label>
+                        <input type="number" class="form-control" id="inputTelR">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="inputNomeR" class="form-label">Nome do Responsável</label>
+                        <input type="text" class="form-control" id="inputNomeR">
+                    </div>
+
+                    <a>Informações do Colaborador</a></br>
+
+                    <div class="col-md-6">
+                        <label for="inputNomeC" class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" id="inputNomeC">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputCPF" class="form-label">CPF</label>
+                        <input type="number" class="form-control" id="inputCPF">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="inputnacimento" class="form-label">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="inputnascimento">
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label for="inputTelC" class="form-label">Telefone</label>
+                        <input type="number" class="form-control" id="inputTelC">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="inputSexo" class="form-label">Sexo</label>
+                        <select id="inputSexo" class="form-select">
+                          <option selected>Escolha...</option>
+                          <option>Masculino</option>
+                          <option>Feminino</option>
+                          <option>Outro</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputfuncao" class="form-label">Função</label>
+                        <input type="text" class="form-control" id="inputfuncao">
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label for="inputSetor" class="form-label">Setor</label>
+                        <input type="text" class="form-control" id="inputSetor">
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label for="inputSexo" class="form-label">Tipo de Exame</label>
+                        <select id="inputSexo" class="form-select">
+                          <option selected>Escolha...</option>
+                          <option>Admissional</option>
+                          <option>Periódico</option>
+                          <option>Demissional</option>
+                          <option>Retorno ao Trabalho</option>
+                          <option>Mudança de Risco/Função</option>
+                          <option>Consulta Clínica</option>
+                        </select>
+                    </div>
+                    
+                    <a>Exames Complementares</a>
+                    
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputSexo" class="form-label">Selecione o Período para a realização do exame</label>
+                        <select id="inputSexo" class="form-select">
+                          <option selected>Escolha...</option>
+                          <option>Matutino</option>
+                          <option>Vespertino</option>
+                          <option>Indefinido</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputSexo" class="form-label">Selecione a forma de pagamento</label>
+                        <select id="inputSexo" class="form-select">
+                          <option selected>Escolha...</option>
+                          <option>Empresa</option>
+                          <option>Colaborador</option>
+                        </select>
+                    </div>
+
+                                        
+                    <a>Selecione as Aptidões Necessárias</a>
+
+                    <div class="col-2">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Trabalho em Altura
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Trabalho em Espaço Confinado
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Trabalho com Eletricidade
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Manuseio de Alimentos
+                          </label>
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Operação de Máquinas
+                          </label>
+                        </div>
+                    </div>
+                    
+
+
+                    <div class="col-2">
+                      <button onclick="window.print()" class="btn btn-dark">Gerar Encaminhamento</button>
+                    </div>
+
+
+                </form>
+
+</body>
+</html>

@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Novo Cadastro</title>
-<body>
-   
-    <div class="container">
-        <h1>Cadastrar Nova Clínica</h1>
-        <div class="form">
-            <label> Razão Social </label>
-            <input type="text">
-            <label> Nome Fantasia </label>
-            <input type="text">
-            <label> CNPJ </label>
-            <input type="number">
-            <label> Email </label>
-            <input type="email">
-            <label> Contato </label>
-            <input type="number">
-            <button>Cadastrar</button>
-            <button type="button" onclick="cadastrosclinicas()">Clínicas Cadastradas</button>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>SoftMed - Clínicas Cadastradas</title>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../index.css" rel="stylesheet" />
+</head>
 
+
+<body class="d-flex flex-column">
+
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" >Cadastrar Nova Clínica</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Voltar ao Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="clinicascadastradas.html">Clínicas Cadastradas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </main>  
+  
+
+    <div class="container">
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label"> Razão Social </label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+            <label for="formGroupExampleInput" class="form-label"> Nome Fantasia </label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+            <label for="formGroupExampleInput" class="form-label"> CNPJ </label>
+            <input type="number" class="form-control" id="formGroupExampleInput">
+            <label for="formGroupExampleInput" class="form-label"> Email </label>
+            <input type="email" class="form-control" id="formGroupExampleInput">
+            <label for="formGroupExampleInput" class="form-label"> Contato </label>
+            <input type="number" class="form-control" id="formGroupExampleInput">
+            <button class="btn btn-outline-success btn-md px-4">Cadastrar</button>
         </div>
 
     </div>  
@@ -36,7 +57,6 @@
 
 
 </body>
-<link rel="stylesheet" href="cadclinicas.css">
 
 </html>
 

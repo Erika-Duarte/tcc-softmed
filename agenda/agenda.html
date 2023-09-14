@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>SoftMed - Clínicas Cadastradas</title>
+    <title>SoftMed - Agendamentos</title>
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="../../index.css" rel="stylesheet" />
+    <link href="../index.css" rel="stylesheet" />
 </head>
 <body class="d-flex flex-column">
     <main class="flex-shrink-0">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-                <a class="navbar-brand" >Clínicas Cadastradas</a>
+                <a class="navbar-brand">Agendamentos</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="../../index.html">Voltar ao Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cadclinicas.html">Novo Cadastro</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Voltar ao Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../encaminhamento/encaminhamento.html">Gerar novo Encaminhamento</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,12 +31,10 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Razão Social</th>
-                    <th scope="col">Nome Fantasia</th>
-                    <th scope="col">CNPJ</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Contato</th>
-                    <th scope="col">Ações</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Período</th>
+                    <th scope="col">Empresa</th>
+                    <th scope="col">Nome</th>
                 </tr>
             </thead>
             <tbody>
@@ -45,10 +43,13 @@
         </table>
     </div>
     <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-database-compat.js"></script>
-<script src="firebasecad.js"></script>
-</body>
+    <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-database-compat.js"></script>
 
-</html>
+    <!-- <script src="scriptcadastros.js"></script> -->
+
+
+
+
+
 </body>
 </html>
