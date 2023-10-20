@@ -30,13 +30,38 @@
         <form>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Login</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email@Softmed.com">
-              </div>
+              <input type="email" required="required" name="email" onchange="validateFields()" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email@Softmed.com">
+           
+            </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Senha</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+              <input type="password" required="required" name="password" onchange="validateFields()" class="form-control" id="password" placeholder="Senha">
+   
+                
             </div>
-            <button type="submit" class="btn btn-primary" >Entrar</button>
+            <button type="button" class="btn btn-primary" id="entrar" disabled="true" onclick="logado()" >Entrar</button>
           </form>
     </body>
+    <script src="loginusuario.js"></script>
+    <script src="../../validacoes.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+
+
+<script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyAKNn40LAfPZZlp2w_bam1aYpDfwANbJVg",
+    authDomain: "tcc-softmed.firebaseapp.com",
+    databaseURL: "https://tcc-softmed-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "tcc-softmed",
+    storageBucket: "tcc-softmed.appspot.com",
+    messagingSenderId: "715516448986",
+    appId: "1:715516448986:web:cd3a5bdc99e2c05f46d5e3"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
 </html>
