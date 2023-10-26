@@ -20,49 +20,46 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
                 <a class="navbar-brand">Guia de Encaminhamento</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="../index.html">Sair</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../agenda/agenda.html">Ir para Agenda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agenda.html">Ir para Agenda</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
   </main>
 
-  <form class="row g-3">
+  <form class="row g-4">
 
-              <div class="col-md-3">
+              <div class="col-md-2">
                 <label for="inputnacimento" class="form-label">Data do Agendamento</label>
-                <input type="date" class="form-control" id="inputnascimento">
+                <input type="date" class="form-control" id="agendamento">
             </div>
-            <div class="col-md-3">
-              <label for="inputSexo" class="form-label">Selecione o Período para a realização do exame</label>
-              <select id="inputSexo" class="form-select">
-                <option selected>Escolha...</option>
-                <option>Matutino</option>
-                <option>Vespertino</option>
-                <option>Indefinido</option>
-              </select>
+            <div class="col-md-2">
+              <label for="inputnacimento" class="form-label">Digite o Periodo</label>
+              <input type="text" class="form-control" id="agendamento">
           </div>
-          <div class="col-md-3">
-            <label for="inputNomeC" class="form-label">Nome Completo do Colaborador</label>
-            <input type="text" class="form-control" id="inputNomeC">
-        </div>
-                    <div class="col-md-3">
-                      <label for="inputRazao" class="form-label">Razão Social</label>
-                      <input type="text" class="form-control" id="Razao">
-                    </div>
-                
+          <div class="col-md-4">
+              <label for="cpf" class="form-label">CPF do colaborador</label>
+              <input type="number" class="form-control" >
+            </div>
+
+                    <div class="col-md-4">
+                        <label for="cnpj" class="form-label">CNPJ da Empresa</label>
+                        <input type="number" class="form-control">
+                 
+                    </div>  
+                    
+                <!-- 
                     <div class="col-md-4">
                       <label for="inputNomeF" class="form-label">Nome Fantasia</label>
                       <input type="text" class="form-control" id="inputNomeF">
                     </div>
 
                     <div class="col-4">
-                      <label for="inputCNPJ" class="form-label">CNPJ</label>
-                      <input type="number" class="form-control" id="inputCNPJ">
+                      <label for="inputCNPJ" class="form-label">Razão Social</label>
+                      <input type="number" class="form-control" id="inputrazaosocial">
                     </div>
                     
                     <div class="col-md-4">
@@ -245,7 +242,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <label for="inputSexo" class="form-label">Selecione a forma de pagamento</label>
+                        <label for="inputSexo" class="form-label">Realização do Pagamento</label>
                         <select id="inputSexo" class="form-select">
                           <option selected>Escolha...</option>
                           <option>Empresa</option>
@@ -306,7 +303,18 @@
                     <div class="col-2">
                       <button onclick="window.print()" class="btn btn-dark">Gerar Encaminhamento</button>
                     </div>
-  </form>
+  </form> -->
+  <button class="btn btn-outline-success btn-md px-4" type="button">Concluir</button>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-database-compat.js"></script>
+
+
+
+      <script src="encaminhamento.js"></script>
+      <script src="firebaseenc.js"></script>
 
 </body>
 </html>

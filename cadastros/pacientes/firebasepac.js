@@ -1,3 +1,6 @@
+const firebaseConfig = {
+    databaseURL: "https://tcc-softmed-default-rtdb.asia-southeast1.firebasedatabase.app"
+ }
 
  firebase.initializeApp (firebaseConfig)
 
