@@ -29,24 +29,25 @@
         </main>    
 
         <div class="container">
+            <form action="" id="pacienteForm">
             <div class="mb-3">
                 <label for="formGroupExampleInput" class="form-label"> Nome </label>
-                <input type="text" class="form-control" id="formGroupExampleInput" >
+                <input type="text" class="form-control" id="nomeID" >
                 <label for="formGroupExampleInput" class="form-label"> CPF </label>
-                <input type="number" class="form-control" id="formGroupExampleInput">
+                <input type="number" class="form-control" id="CPFID">
                 <label for="formGroupExampleInput" class="form-label"> Data de Nasicmento </label>
-                <input type="date" class="form-control" id="formGroupExampleInput">
+                <input type="date" class="form-control" id="datanascID">
                 <label for="formGroupExampleInput" class="form-label"> Contato </label>
-                <input type="number" class="form-control" id="formGroupExampleInput">
-                <button class="btn btn-outline-success btn-md px-4" type="button">Adicionar</button>
+                <input type="number" class="form-control" id="contatoID">
+                <button class="btn btn-outline-success btn-md px-4" type="submit">Adicionar</button>
             </div>
-
+            </form>
         </div>
 
         <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-app-compat.js"></script>
         <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-database-compat.js"></script>
         <script src="novocadpacientes.js"></script>
-        <script src="firebasepac.js"></script>
+        
 
 
     </body>

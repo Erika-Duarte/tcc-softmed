@@ -32,20 +32,28 @@
   
 
     <div class="container">
+        <form action="" id="empresaForm">
         <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label"> Razão Social </label>
-            <input type="text" class="form-control" id="formGroupExampleInput">
-            <label for="formGroupExampleInput" class="form-label"> Nome Fantasia </label>
-            <input type="text" class="form-control" id="formGroupExampleInput">
-            <label for="formGroupExampleInput" class="form-label"> CNPJ </label>
-            <input type="number" class="form-control" id="formGroupExampleInput">
-            <label for="formGroupExampleInput" class="form-label"> Email </label>
-            <input type="email" class="form-control" id="formGroupExampleInput">
-            <label for="formGroupExampleInput" class="form-label"> Contato </label>
-            <input type="number" class="form-control" id="formGroupExampleInput">
-            <button class="btn btn-outline-success btn-md px-4">Cadastrar</button>
-        </div>
+            <!-- <input type="number" class="form-control" id="Idempresa" disabled=""> -->
 
+            <label for="formGroupExampleInput" class="form-label"> Razão Social </label>
+            <input type="text" class="form-control" id="razaoSocial">
+
+            <label for="formGroupExampleInput" class="form-label"> Nome Fantasia </label>
+            <input type="text" class="form-control" id="nomeFantasia">
+
+            <label for="formGroupExampleInput" class="form-label"> CNPJ </label>
+            <input type="number" class="form-control" id="cnpjEmpresa">
+
+            <label for="formGroupExampleInput" class="form-label"> Email </label>
+            <input type="email" class="form-control" id="emailEmpresa">
+
+            <label for="formGroupExampleInput" class="form-label"> Contato </label>
+            <input type="number" class="form-control" id="contatoEmpresa">
+
+            <button class="btn btn-outline-success btn-md px-4" type="submit">Cadastrar</button>
+        </div>
+    </form>
     </div>  
 <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-database-compat.js"></script>

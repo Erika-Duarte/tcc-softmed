@@ -23,11 +23,11 @@ fetchedData.on('value', (snapshot) => {
         var value = data[key]
         htmlData += `
         <tr>
-                <td>${value.nome}</td>
-                <td>${value.nomesocial}</td>
-                <td>${value.cnpj}</td>
-                <td>${value.email}</td>
-                <td>${value.contato}</td>
+                <td>${value.razaoSocial}</td>
+                <td>${value.nomeFantasia}</td>
+                <td>${value.cnpjEmpresa}</td>
+                <td>${value.emailEmpresa}</td>
+                <td>${value.contatoEmpresa}</td>
                 <td>
                     <button onclick="readyForUpdate('${key}', this)">Atualizar</button>
                     <button onclick="removeMess('${key}', this)">Deletar</button>
